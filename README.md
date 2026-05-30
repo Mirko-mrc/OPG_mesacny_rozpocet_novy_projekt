@@ -1,4 +1,4 @@
-## Commity
+## Commity :D
 
 | Dielik | Student | Den | Commit |
 |---|---|---|---|
