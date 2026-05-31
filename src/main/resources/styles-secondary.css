@@ -51,4 +51,5 @@
     -fx-text-fill: white;
 }
 
-.status-label { -fx-text-fill: #1f2530; }
+.status-label { -fx-text-fill: #132545; -fx-background-color: rgba(255, 0, 0, 0.4); -fx-font-size: 20;
+}
