@@ -1,0 +1,46 @@
+.app-root {
+    -fx-background-color: #f5f7fb;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    }
+.header {
+    -fx-background-color: linear-gradient(to right, #17324d, #236b62);
+    }
+
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    }
+
+.stat-card {
+    -fx-background-color: rgba(255,255,255,0.14);
+    -fx-background-radius: 8px;
+    -fx-border-color: rgba(255,255,255,0.22);
+    -fx-border-radius: 8px; -fx-padding: 12px;
+    }
+
+.stat-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cde6f0;
+    }
+
+.stat-value {
+    -fx-font-size: 21px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    }
+
+.button { -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-padding: 8px 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    }
+
+.primary-button {
+    -fx-background-color: #19a974;
+    -fx-text-fill: white;
+    }
+
+.status-label { -fx-text-fill: #526174; }

@@ -1,23 +1,21 @@
 package project;
 
 import javafx.application.Application;
-import javafx.geometry.Insets;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class RozpocetApp extends Application {
     @Override
-    public void start(Stage stage) {
-        Label title = new Label("Spravca rozpoctu");
-        title.setStyle("-fx-font-size: 26px; -fx-font-weight: bold;");
-        Label subtitle = new Label("Startovacia JavaFX verzia. Funkcie pribudnu v dalsich commitoch.");
-        VBox root = new VBox(12, title, subtitle);
-        root.setPadding(new Insets(28));
-        root.setStyle("-fx-background-color: #f5f7fb;");
+    public void start(Stage stage) throws IOException {
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("primary.fxml"));
+        Scene scene = new Scene(loader.load(), 980, 640);
         stage.setTitle("Spravca rozpoctu");
-        stage.setScene(new Scene(root, 720, 420));
+        stage.setMinWidth(860);
+        stage.setMinHeight(560);
+        stage.setScene(scene);
         stage.show();
     }
 
