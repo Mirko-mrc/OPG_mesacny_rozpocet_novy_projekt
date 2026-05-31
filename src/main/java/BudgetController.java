@@ -32,7 +32,7 @@ public class BudgetController {
 
     @FXML
     private void initialize() {
-        budgetComboBox.getItems().addAll("rodina", "student");
+        budgetComboBox.getItems().addAll("rodina", "student", "dochodca", "slobodny_muz");
         budgetComboBox.setValue("rodina");
         filterComboBox.setOnAction(event -> filtruj());
         nameColumn.setCellValueFactory(p -> new SimpleStringProperty(p.getValue().getNazov()));
@@ -94,6 +94,17 @@ public class BudgetController {
         polozky.remove(vybrana);
         nastavStatus("Polozka bola odstranena.");
         obnovPrehlad();
+    }
+
+    @FXML
+    private void handleSave() {
+        if (!jeNacitanyRozpocet()) return;
+        try {
+            repository.uloz(aktualnySubor, rozpocet);
+            nastavStatus("Rozpocet bol ulozeny.");
+        } catch (IOException e) {
+            chyba("Subor sa nepodarilo ulozit.");
+        }
     }
 
     @FXML
