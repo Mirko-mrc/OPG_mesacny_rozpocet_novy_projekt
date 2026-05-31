@@ -1,4 +1,4 @@
-package project;
+package main.java;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ import java.io.IOException;
 public class RozpocetApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("primary.fxml"));
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("/primary.fxml"));
         Scene scene = new Scene(loader.load(), 980, 640);
         stage.setTitle("Spravca rozpoctu");
         stage.setMinWidth(860);

@@ -1,4 +1,4 @@
-package project;
+package main.java;
 
 public class RozpocetPolozka extends Polozka {
     private double suma;

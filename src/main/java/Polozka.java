@@ -1,4 +1,4 @@
-package project;
+package main.java;
 
 public class Polozka {
     private String nazov;
